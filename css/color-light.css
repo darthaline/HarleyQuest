@@ -1,0 +1,35 @@
+/* general
+-------------------------------------------------- */
+html {
+  background-color: #ffffff;  /*white*/
+  color: #000000; /*black*/
+}
+
+/* header
+-------------------------------------------------- */
+.header {
+  background-color: #a9a9a9; /*aro-grey*/
+}
+
+/* header links */
+.header a {
+  color: #000000; /*black*/
+}
+
+/* change the background color on mouse-over */
+.header a:hover {
+  background-color: #000000;  /*black*/
+  color: #ffffff; /*white*/
+}
+
+/* active/current link*/
+.header a.active {
+  background-color: #ffffff;  /*white*/
+  color: #000000; /*black*/
+}
+
+/* main
+-------------------------------------------------- */
+.highlight {
+  color: #06ff00; /*jade*/
+}

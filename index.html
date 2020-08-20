@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<meta name="description" content="HarleyQuest">
+		<meta name="author" content="artaline & BrightMikal">
+		<link rel="icon" href="images/harleyquestflavicon.ico" />
+		<!-- Own CSS -->
+		<link rel="stylesheet" type="text/css" href="css/interface.css" />
+		<link id="cssColorSchemeLink" rel="stylesheet" type="text/css" href="css/color-dark.css" />
+		<title>HarleyQuest</title>
+	</head>
+	<body onLoad="load()">
+	
+  	<!-- navbar -->
+	  <header class="header">
+		  <nav>
+          <a class="active" href="#HarleyQuest" id="title">HarleyQuest</a>
+          <a href="about.html">About</a>
+		  </nav>
+		</header>
+	  
+    <!-- Begin page content -->
+    <main id="game-mechanics">
+      <div class="flex-container">
+        <div class="flex-item" id="resources">
+          <h4>Resources</h4>
+          <div id="stamina-div" class="">
+            Stamina:
+            <div class="resource">
+              <span id="stamina">5</span><span class="cap">/</span><span id="staminaCap" class="cap">10</span>
+            </div><br />
+          </div>
+          <div id="wood-div" class="">
+            Wood:
+            <div class="resource">
+              <span id="wood">0</span>
+            </div><br />
+          </div>
+          <div id="food-div" class="">
+            Food:
+            <div class="resource">
+              <span id="food">0</span>
+            </div><br />
+          </div>
+          <div id="metal-div" class="">
+            Metal:
+            <div class="resource">
+              <span id="metal">0</span>
+            </div><br />
+          </div>
+          <div id="trash-div" class="">
+            Trash:
+            <div class="resource">
+              <span id="trash">0</span>
+            </div><br />
+          </div>
+        </div>
+        
+        <div class="flex-item" id="actions">
+          <h4>Actions</h4>
+          <button title="restores 2 stamina" onclick="restClick(1)">Rest</button><br />
+		      <button title="depletes 1 stamina" onclick="gatherWoodClick(1)">Gather Wood</button><br />
+          <button title="depletes 2 stamina" onclick="salvage(1)">Salvage</button><br />
+        </div>
+        
+        <div class="flex-item" id="game-save-management">
+          <h4>Game Save</h4>
+          <button title="game saves automatically every second" onclick="save()">Save Game</button><br />
+          <button title="restores game to start conditions" onclick="deleteSave()">Delete Save</button><br />
+        </div>
+        
+        <div class="flex-item" id="color-theme">
+          <h4>Color Theme</h4>
+          <form action="">
+            <input type="radio" name="colorTheme" value="color-light" onclick="changeCSS('css/color-light.css')" /> Light<br />
+            <input type="radio" name="colorTheme" value="color-dark" onclick="changeCSS('css/color-dark.css')"/> Dark<br />
+          </form>
+        </div>
+      </div>
+      
+      <div class="backlog">
+        <span id="backlog" >You are stranded on the island in the Pacific.</span>
+      </div>
+    
+      <!-- <div id="cookie-clickler" class="invisible">
+        <button onclick="cookieClick(1)">Click Me!</button><br />
+        Cookies: <span id="cookies">0</span><br />
+        
+        <button onclick="buyCursor()">Buy Cursor</button><br />
+        Cursors: <span id="cursors">0</span><br />
+        Cursor Cost: <span id="cursorCost">10</span><br />
+        
+        <button onclick="buyGrandma()">Buy Grandma</button><br />
+        Grandmas: <span id="grandmas">0</span><br />
+        Grandma Cost: <span id="grandmaCost">25</span><br />
+        
+        <button onclick="deleteSave()">Delete Save</button><br />
+      </div> -->
+    </main>
+		
+    <!-- footer -->
+    <footer class="footer">
+      <div>
+        <p>Copyright &copy; <span id="copyrightYear">2018</span> artaline & BrightMikal</p>
+      </div>
+    </footer>
+    
+		<!-- Own JavaScript -->
+		<script src="./js/main.js"></script>
+    <!-- <script src="./js/cookies-tutorial.js"></script> -->
+		
+	</body>
+</html>
