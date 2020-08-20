@@ -1,2 +1,1 @@
-# HarleyQuest
- 
+This is a [test implementation for an incremental game](https://darthaline.github.io/HarleyQuest/game.html) about a girl stranded on an island in the Pacific
